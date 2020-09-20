@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from DashboardDjangoSoftware.views import saludos, despedida, ObtenerFecha
+from DashboardDjangoSoftware.views import saludos, despedida, ObtenerFecha, calcularEdad
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludos/', saludos),
     path('nosveremos/', despedida),
     path('fecha/', ObtenerFecha),
+    path('edades/<int:edad>/<int:year>', calcularEdad),
 ]

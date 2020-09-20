@@ -1,9 +1,16 @@
 from django.http import HttpResponse
 import datetime
+from django.template import Template, Context
 
 
 def saludos(request):  # Primera vista
-    return HttpResponse("Hola mundo")
+    doc_externo = open(
+        "D:/Desktop/Prueba/DashboardDjango/DashboardDjangoSoftware/DashboardDjangoSoftware/templates/index.html")
+    plt = Template(doc_externo.read())
+    doc_externo.close()
+    ctx = Context()
+    documento = plt.render(ctx)
+    return HttpResponse(documento)
 
 
 def despedida(request):
@@ -18,6 +25,10 @@ def ObtenerFecha(request):
     return HttpResponse(documento)
 
 
-def calcularEdad(request, year):
-    edadActual = 18
+def calcularEdad(request, edad, year):
+    #edadActual = 18
     periodo = year-2020
+    edadFutura = edad+periodo
+    documento = "<html><body><h2>En el año %s tendras %s años" % (
+        year, edadFutura)
+    return HttpResponse(documento)
