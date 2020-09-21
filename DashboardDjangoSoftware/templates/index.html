@@ -11,7 +11,23 @@
             </head>
 
             <body>
-                        <h1>Hola mundo de Django</h1>
+
+                        <h1 style="color:blue">Hola mundo de Django</h1>
+
+                        <p>El nombre de la persona: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+                        <p>La hora actual {{momento_actual}}</p>
+                        <p><b> Temas del curso</b></p>
+                        <p>
+                                    <ul>
+                                                {% if temas %}
+                                                {% for eltema in temas %}
+                                                <li>{{eltema}}</li>
+                                                {% endfor %}
+                                                {% else %}
+                                                <p>No hay elementos que mostrar</p>
+                                                {% endif%}
+                                    </ul>
+                        </p>
             </body>
             <script src='main.js'></script>
 
