@@ -2,6 +2,7 @@ from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
 from django.template.loader import get_template
+from django.shortcuts import render
 
 
 class Persona(object):
@@ -21,11 +22,11 @@ def saludos(request):  # Primera vista
     #     "D:/Desktop/Prueba/DashboardDjango/DashboardDjangoSoftware/DashboardDjangoSoftware/templates/index.html")
     # plt = Template(doc_externo.read())
     # doc_externo.close()
-    plantilla = get_template('index.html')
+    #plantilla = get_template('index.html')
     #ctx = Context({"nombre_persona": p1.name,"apellido_persona": p1.apellido, "momento_actual": ahora, "temas": temaCurso})
-    documento = plantilla.render(
-        {"nombre_persona": p1.name, "apellido_persona": p1.apellido, "momento_actual": ahora, "temas": temaCurso})
-    return HttpResponse(documento)
+    #documento = plantilla.render({"nombre_persona": p1.name, "apellido_persona": p1.apellido, "momento_actual": ahora, "temas": temaCurso})
+    # return HttpResponse(documento)
+    return render(request, "index.html", {"nombre_persona": p1.name, "apellido_persona": p1.apellido, "momento_actual": ahora, "temas": temaCurso})
 
 
 def despedida(request):

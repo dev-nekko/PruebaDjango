@@ -1,0 +1,101 @@
+<style>
+            :root {
+                        font-size: 16px;
+                        font-family: sans-serif;
+                        --text-primary: #b6b6b6;
+                        --text-secondary: #ececec;
+                        --bg-primary: #23232e;
+                        --bg-secondary: #141418;
+            }
+
+            body {
+                        color: black;
+                        background-color: white;
+                        margin: 0;
+                        padding: 0;
+            }
+
+            body::-webkit-scrollbar {
+                        width: 0.25rem;
+            }
+
+            body::-webkit-scrollbar-track {
+                        background: #1e1e24;
+            }
+
+            body::-webkit-scrollbar-thumb {
+                        background: #6649b8;
+            }
+
+            main {
+                        margin-left: 5rem;
+                        padding: 1rem;
+            }
+
+            .navbar {
+                        width: 5rem;
+                        height: 100vh;
+                        position: fixed;
+                        background-color: var(--bg-primary);
+            }
+
+            .navbar-nav {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+            }
+
+            .nav-item {
+                        width: 100%;
+            }
+
+            .nav-item:last-child {
+                        margin-top: auto;
+            }
+
+            .nav-link {
+                        display: flex;
+                        align-items: center;
+                        height: 5rem;
+                        color: var(--text-primary);
+                        text-decoration: none;
+            }
+
+            .link-text {
+                        display: none;
+            }
+</style>
+
+
+<nav class="navbar">
+            <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 576 512">
+                                                            <path
+                                                                        d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z" />
+                                                </svg><span class="link-text">Proyectos</span></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                        d="M500 128c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12h-72c-6.627 0-12 5.373-12 12v12H96V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v72c0 6.627 5.373 12 12 12h12v256H12c-6.627 0-12 5.373-12 12v72c0 6.627 5.373 12 12 12h72c6.627 0 12-5.373 12-12v-12h320v12c0 6.627 5.373 12 12 12h72c6.627 0 12-5.373 12-12v-72c0-6.627-5.373-12-12-12h-12V128h12zm-52-64h32v32h-32V64zM32 64h32v32H32V64zm32 384H32v-32h32v32zm416 0h-32v-32h32v32zm-40-64h-12c-6.627 0-12 5.373-12 12v12H96v-12c0-6.627-5.373-12-12-12H72V128h12c6.627 0 12-5.373 12-12v-12h320v12c0 6.627 5.373 12 12 12h12v256zm-36-192h-84v-52c0-6.628-5.373-12-12-12H108c-6.627 0-12 5.372-12 12v168c0 6.628 5.373 12 12 12h84v52c0 6.628 5.373 12 12 12h200c6.627 0 12-5.372 12-12V204c0-6.628-5.373-12-12-12zm-268-24h144v112H136V168zm240 176H232v-24h76c6.627 0 12-5.372 12-12v-76h56v112z" />
+                                                </svg><span class="link-text">Preliminar</span></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 448 512">
+                                                            <path
+                                                                        d="M272 157.1v197.8c0 10.7-13 16.1-20.5 8.5l-98.3-98.9c-4.7-4.7-4.7-12.2 0-16.9l98.3-98.9c7.5-7.7 20.5-2.3 20.5 8.4zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z" />
+                                                </svg><span class="link-text">Reconocimiento</span></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 496 512">
+                                                            <path
+                                                                        d="M347.94 129.86L203.6 195.83a31.938 31.938 0 0 0-15.77 15.77l-65.97 144.34c-7.61 16.65 9.54 33.81 26.2 26.2l144.34-65.97a31.938 31.938 0 0 0 15.77-15.77l65.97-144.34c7.61-16.66-9.54-33.81-26.2-26.2zm-77.36 148.72c-12.47 12.47-32.69 12.47-45.16 0-12.47-12.47-12.47-32.69 0-45.16 12.47-12.47 32.69-12.47 45.16 0 12.47 12.47 12.47 32.69 0 45.16zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z" />
+                                                </svg><span class="link-text">Topografia</span></a>
+                        </li>
+            </ul>
+</nav>
