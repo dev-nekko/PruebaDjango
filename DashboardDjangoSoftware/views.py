@@ -29,6 +29,15 @@ def saludos(request):  # Primera vista
     return render(request, "index.html", {"nombre_persona": p1.name, "apellido_persona": p1.apellido, "momento_actual": ahora, "temas": temaCurso})
 
 
+def prueba(request):
+  fecha_actual=datetime.datetime.utcnow()
+  return render(request, 'vista1.html',{"fecha_actual":fecha_actual})
+
+def test(request):
+  fecha_actual=datetime.datetime.utcnow()
+  return render(request, 'vista2.html',{"fecha_actual":fecha_actual})
+
+
 def despedida(request):
     return HttpResponse("Adios mundo")
 
@@ -58,6 +67,9 @@ def ruta(request):
 
 def reconocimiento(request):
   return render(request, 'reconocimiento.html')
+
+def listaproyectos(request):
+  return render(request, 'lista_proyectos.html')
 
 # # Realizar consultas
 # def get_empleado(): # Funcion de prueba, eliminarlo despues

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+            <title>
+                        {% block title %}{% endblock %}
+            </title>
+
+</head>
+
+<body>
+            {% include "layouts/navbar.html" %}
+            <main style="margin-left: 90px; padding:10px">
+                        <h1>Esto es una prueba de vistas</h1>
+
+                        <h3>Prueba de estado de vistas</h3>
+
+                        {% block content %} {% endblock %}
+
+                        <p>Vamos a seguir probando cosas</p>
+
+            </main>
+
+</body>
+
+</html>

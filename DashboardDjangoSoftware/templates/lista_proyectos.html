@@ -18,7 +18,7 @@
     <div class="content--container-bg">
       <section class="section--container">
         <div class="navbar--links">
-          <h2 class="section--title">.:Lista de Opciones:.</h2>
+          <h2 class="section--title">.:Lista de Proyectos:.</h2>
           <div class="option--container">
             <a href="/ruta" class="btn btn-bg option--item active">
               Preeliminar
@@ -29,7 +29,7 @@
           </div>
         </div>
       </section>
-      <section class="section--container">
+      <!-- <section class="section--container">
         <div class="navbar--options">
           <h2 class="section--title">.:Opciones Tramificación:.</h2>
           <div class="option--container option--container-center">
@@ -50,8 +50,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="section--container">
+      </section> -->
+      <!-- <section class="section--container">
         <div class="project--section">
           <h2 class="section--title">.:Proyecto:.</h2>
           <div class="project--container">
@@ -84,18 +84,19 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="section--container">
         <div class="route--section">
-          <h2 class="section--title">.:Rutas:.</h2>
+          <h2 class="section--title">.:Proyectos:.</h2>
           <div class="table--container">
             <div class="table--row head route--row">
-              <p class="table--item">Número</p>
-              <p class="table--item">Cod. Ruta Py.</p>
-              <p class="table--item">Cod. Ruta</p>
-              <p class="table--item min-row-width">Nombre de la Ruta</p>
-              <p class="table--item">Prog. Inicial</p>
-              <p class="table--item">Prog. Final</p>
+              <p class="table--item">Cod</p>
+              <p class="table--item">Cod. SNIP</p>
+              <p class="table--item">Fecha Reg</p>
+              <p class="table--item min-row-width">Fase</p>
+              <p class="table--item">Nivel</p>
+              <p class="table--item">Funcion</p>
+              <!-- <p class="table--item">Nombre Proyecto</p> -->
             </div>
             <div class="table--body">
               {% for ruta in rutas %}
@@ -108,51 +109,51 @@
                 <p class="table--item body">{{ ruta.progFinal }}</p>
               </div>
               {% endfor %}
-              <div class="table--row route--row body">
+              <!-- <div class="table--row route--row body">
                 <p class="table--item body">002</p>
                 <p class="table--item body">Rut002</p>
                 <p class="table--item body">AN-1314</p>
                 <p class="table--item body min-row-width">De Congas hasta Huyto</p>
                 <p class="table--item body">0 + 000</p>
                 <p class="table--item body">86 + 650</p>
-              </div>
+              </div> -->
               <div class="table--row route--row body">
                 <p class="table--item body">001</p>
-                <p class="table--item body">Rut001</p>
-                <p class="table--item body">AN-112</p>
-                <p class="table--item body min-row-width">De Emp. PE 16 (Dv. Ocros)</p>
-                <p class="table--item body">0 + 000</p>
-                <p class="table--item body">138 + 170</p>
+                <p class="table--item body">12300</p>
+                <p class="table--item body">2020-09-17</p>
+                <p class="table--item body min-row-width">20</p>
+                <p class="table--item body">20</p>
+                <p class="table--item body">AA</p>
               </div>
               <div class="table--row route--row body">
                 <p class="table--item body">002</p>
-                <p class="table--item body">Rut002</p>
-                <p class="table--item body">AN-1314</p>
-                <p class="table--item body min-row-width">De Congas hasta Huyto</p>
-                <p class="table--item body">0 + 000</p>
-                <p class="table--item body">86 + 650</p>
+                <p class="table--item body">12300</p>
+                <p class="table--item body">2020-09-17</p>
+                <p class="table--item body min-row-width">20</p>
+                <p class="table--item body">20</p>
+                <p class="table--item body">AA</p>
               </div>
               <div class="table--row route--row body">
-                <p class="table--item body">001</p>
-                <p class="table--item body">Rut001</p>
-                <p class="table--item body">AN-112</p>
-                <p class="table--item body min-row-width">De Emp. PE 16 (Dv. Ocros)</p>
-                <p class="table--item body">0 + 000</p>
-                <p class="table--item body">138 + 170</p>
+                <p class="table--item body">003</p>
+                <p class="table--item body">12300</p>
+                <p class="table--item body">2020-09-17</p>
+                <p class="table--item body min-row-width">20</p>
+                <p class="table--item body">20</p>
+                <p class="table--item body">AA</p>
               </div>
               <div class="table--row route--row body">
-                <p class="table--item body">002</p>
-                <p class="table--item body">Rut002</p>
-                <p class="table--item body">AN-1314</p>
-                <p class="table--item body min-row-width">De Congas hasta Huyto</p>
-                <p class="table--item body">0 + 000</p>
-                <p class="table--item body">86 + 650</p>
+                <p class="table--item body">004</p>
+                <p class="table--item body">12300</p>
+                <p class="table--item body">2020-09-17</p>
+                <p class="table--item body min-row-width">20</p>
+                <p class="table--item body">20</p>
+                <p class="table--item body">AA</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section--container">
+      <!-- <section class="section--container">
         <div class="stretch--section">
           <h2 class="section--title">.:Tramos:.</h2>
           <div class="table--container">
@@ -193,7 +194,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
 </div>

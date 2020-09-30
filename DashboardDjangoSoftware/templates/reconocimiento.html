@@ -23,10 +23,13 @@
   </head>
 
   <body>
+
     <div class="wrapper">
       {% include "layouts/navbar_lateral.html" %}
+
       <div class="tramificacion" id="content">
         <nav class="navbar navbar-expand navbar--collapse">
+
           <div class="container-fluid">
             <button type="button" id="sidebar-btn" class="btn btn-bg">
               <i class="fa fa-bars"></i>
@@ -34,8 +37,10 @@
           </div>
         </nav>
         <section class="section--container">
+
           <div class="navbar--links">
             <h2 class="section--title">.:Lista de Opciones:.</h2>
+
             <div class="option--container">
               <a href="/ruta" class="btn btn-bg option--item active">
                 Preeliminar
@@ -60,7 +65,9 @@
             <option value="" selected>Elija una opcion</option>
           </select>
         </section>
+
         <div class="main">
+
           <div class="seccion1">
             <ul id="myUL">
               <li><span class="caret">Ruta -AN-112</span>
@@ -106,6 +113,7 @@
               </li>
             </ul>
           </div>
+
           <div class="seccion2">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -135,20 +143,26 @@
             </ul>
 
             <div class="tab-content" id="myTabContent">
+
               <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+
                 <div class="row tab-item">
+
                   <div class="col-2 pad">
                     <label>Cod.Ruta:</label>
                     <input class="input" type="text" style="width:40px; " disabled="true" value="001" />
                   </div>
+
                   <div class="col-3 pad">
                     <label>Cod.Ruta Py:</label>
                     <input class="input" type="text" style="width: 100px; " value="AN-112" />
                   </div>
+
                   <div class="col-4">
                     <label>Fecha:</label>
                     <input class="input" type="date" />
                   </div>
+
                   <div class="col-3">
                     <label>Estado:</label>
                     <select style="width: 100px;">
@@ -162,12 +176,15 @@
                 </div>
 
                 <div class="row tab-item">
+
                   <div class="col">
                     <label>Denominación Ruta:</label>
                     <textarea class="form-control" rows="4"></textarea>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-6 pad">
                     <label>Den. conto:</label>
                     <input class="input" type="text" style="width: 300px; "
@@ -184,55 +201,70 @@
                       <option>22</option>
                     </select>
                   </div>
+
                   <div class="col-3 pad">
                     <label>Long:</label>
                     <input class="input" type="text" style="width: 65px; " disabled="true" value="128.000" />
                     <label>Kms.</label>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-3">
                     <label>Prog Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Latitud Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Longitud.Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>ALtitud Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-3">
                     <label>Prog Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Latitud Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Longitud.Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>ALtitud Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col">
                     <label>Observación:</label>
                     <textarea class="form-control" rows="4"></textarea>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col">
                     <label>Elaborado por:</label>
                     <select style="width: 300px; ">
@@ -246,35 +278,45 @@
                 </div>
 
               </div>
+
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
                 <div class="row tab-item">
+
                   <div class="col-2">
                     <label>Cod.Ruta:</label>
                     <input class="input" type="text" style="width:45px; " disabled="true" value="001" />
                   </div>
+
                   <div class="col-3">
                     <label>Cod.Ruta Py:</label>
                     <input class="input" type="text" style="width: 90px; " disabled="true" value="AN-112" />
                   </div>
+
                   <div class="col-7">
                     <label>Den. conto:</label>
                     <input class="input" type="text" style="width: 450px; " disabled="true"
                       value="Emp. PE 16 hasta Emp. PE 16 A (Dv.Rinconada)" />
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-2">
                     <label>Cod.Ruta:</label>
                     <input class="input" type="text" style="width:45px;" disabled="true" value="001" />
                   </div>
+
                   <div class="col-3">
                     <label>Cod.Ruta Py:</label>
                     <input class="input" type="text" style="width: 100px;" value="AN-112/001" />
                   </div>
+
                   <div class="col-3">
                     <label>Fecha:</label>
                     <input class="input" type="date" />
                   </div>
+
                   <div class="col-4">
                     <label>Estado:</label>
                     <select style="width: 100px;">
@@ -286,17 +328,22 @@
                     </select>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col">
                     <label>Denominación Tramo:</label>
                     <textarea class="form-control" rows="4"></textarea>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-5">
                     <label>Cod.Ruta:</label>
                     <input class="input" type="text" style="width: 300px; " />
                   </div>
+
                   <div class="col-4">
                     <label>Zona GPS:</label>
                     <select style="width: 80px; ">
@@ -307,49 +354,62 @@
                       <option>22</option>
                     </select>
                   </div>
+
                   <div class="col-3">
                     <label>Long:</label>
                     <input class="input" type="text" style="width: 60px; " disabled="true" value="53.700" />
                     <label>Kms.</label>
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-3">
                     <label>Prog Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Latitud Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Longitud.Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>ALtitud Inicio:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col-3">
                     <label>Prog Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Latitud Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>Longitud.Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
+
                   <div class="col-3">
                     <label>ALtitud Final:</label>
                     <input class="input" type="text" style="width:115px; " />
                   </div>
                 </div>
+
                 <div class="row tab-item">
+
                   <div class="col">
                     <label>Observación:</label>
                     <textarea class="form-control" rows="4"></textarea>
@@ -358,6 +418,7 @@
 
 
               </div>
+
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
             </div>
           </div>

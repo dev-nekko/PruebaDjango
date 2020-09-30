@@ -1,27 +1,58 @@
 {% load static %}
-<nav id="sidebar">
-            <div class="sidebar--header" id="sidebar-header">
-                        <img src="{% static 'img/user.png' %}" alt="user icon">
-                        <p>Aqui va un nombre</p>
-            </div>
-            <ul class="list-unstyled sidebar--list" id="sidebar-list">
-                        <li class="nav-item">
-                                    <a class="sidebar--item" href="/ruta">
-                                                <i class="fas fa-road fa-fw icon-sidebar"></i>
-                                                <span class="sidebar--item-text">Preeliminar</span>
-                                    </a>
-                        </li>
-                        <li>
-                                    <a class="sidebar--item" href="/ruta/reconocimiento">
-                                                <i class="fas fa-map-marker-alt fa-fw icon-sidebar"></i>
-                                                <span class="sidebar--item-text">Reconocimiento</span>
-                                    </a>
-                        </li>
-                        <li>
-                                    <a class="sidebar--item" href="/ruta/topografia">
-                                                <i class="fas fa-drafting-compass fa-fw icon-sidebar"></i>
-                                                <span class="sidebar--item-text">Topografía</span>
-                                    </a>
-                        </li>
-            </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Proyecto Software</title>
+            <!-- Bootstrap -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+                        crossorigin="anonymous" />
+            <!-- Font Awesome -->
+            <script src="https://kit.fontawesome.com/eada1e3dde.js" crossorigin="anonymous"></script>
+            <!-- Styles -->
+
+            <link rel="stylesheet" href="{% static 'css/global.css' %}">
+</head>
+
+<body>
+            <div class="wrapper">
+                        <nav id="sidebar">
+                                    <div class="sidebar--header" id="sidebar-header">
+                                                <img src="{% static 'img/user.png' %}" alt="user icon">
+                                                <p>Aqui va un nombre</p>
+                                    </div>
+                                    <ul class="list-unstyled sidebar--list" id="sidebar-list">
+                                                <li class="nav-item">
+                                                            <a class="sidebar--item" href="/">
+                                                                        <i class="fas fa-item fa-fw icon-sidebar"></i>
+                                                                        <span class="sidebar--item-text">Inicio</span>
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a class="sidebar--item" href="/ruta">
+                                                                        <i class="fas fa-road fa-fw icon-sidebar"></i>
+                                                                        <span
+                                                                                    class="sidebar--item-text">Preeliminar</span>
+                                                            </a>
+                                                </li>
+                                                <li>
+                                                            <a class="sidebar--item" href="/reconocimiento">
+                                                                        <i
+                                                                                    class="fas fa-map-marker-alt fa-fw icon-sidebar"></i>
+                                                                        <span
+                                                                                    class="sidebar--item-text">Reconocimiento</span>
+                                                            </a>
+                                                </li>
+                                                <li>
+                                                            <a class="sidebar--item" href="/topografia">
+                                                                        <i
+                                                                                    class="fas fa-drafting-compass fa-fw icon-sidebar"></i>
+                                                                        <span
+                                                                                    class="sidebar--item-text">Topografía</span>
+                                                            </a>
+                                                </li>
+                                    </ul>
+                        </nav>
